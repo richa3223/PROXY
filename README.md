@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+### used this repo in nhs proxy project, it can be used if want to automate api or if you want to automate AWS lambda using BOTO3
 # Proxy Validated Relationships Service
 
 #### Secrets Scanning
