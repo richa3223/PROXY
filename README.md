@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Proxy Validated Relationships Service
 
 #### Secrets Scanning
@@ -16,3 +17,7 @@ Underpinning this is 'in the cloud' testing of the underlying components, e.g. l
 confidence that the API they enable should work as well.
 
 The tests for both of these approaches can be found in the [tests](tests) directory.
+=======
+This folder I used in NHS proxy project(Leeds).
+If you want to look for API automation or how to useb AWS boto3 for connecting to lambda or automating lambdas use this repo.
+>>>>>>> 366f7a3ee54bc57ea63d04bf6fce5959ba57f91a
