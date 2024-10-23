@@ -1,0 +1,166 @@
+{
+  "resourceType": "Patient",
+  "id": "4171589568",
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "4171589568",
+      "extension": [
+        {
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus",
+                "version": "1.0.0",
+                "code": "01",
+                "display": "Number present and verified"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "versionId": "2",
+    "security": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+        "code": "V",
+        "display": "very restricted"
+      }
+    ]
+  },
+  "name": [
+    {
+      "id": "123",
+      "use": "usual",
+      "period": {
+        "start": "2020-01-01",
+        "end": "2021-12-31"
+      },
+      "given": [""],
+      "family": "",
+      "prefix": [""],
+      "suffix": [""]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "",
+  "multipleBirthInteger": 1,
+  "managingOrganization": {
+    "type": "Organization",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "Y12345",
+      "period": {
+        "start": "2020-01-01",
+        "end": "2021-12-31"
+      }
+    }
+  },
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus",
+      "extension": [
+        {
+          "url": "deathNotificationStatus",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus",
+                "version": "1.0.0",
+                "code": "2",
+                "display": "Formal - death notice received from Registrar of Deaths"
+              }
+            ]
+          }
+        },
+        {
+          "url": "systemEffectiveDate",
+          "valueDateTime": "2010-10-22T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSCommunication",
+      "extension": [
+        {
+          "url": "language",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage",
+                "version": "1.0.0",
+                "code": "fr",
+                "display": "French"
+              }
+            ]
+          }
+        },
+        {
+          "url": "interpreterRequired",
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference",
+      "extension": [
+        {
+          "url": "PreferredWrittenCommunicationFormat",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat",
+                "code": "12",
+                "display": "Braille"
+              }
+            ]
+          }
+        },
+        {
+          "url": "PreferredContactMethod",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod",
+                "code": "1",
+                "display": "Letter"
+              }
+            ]
+          }
+        },
+        {
+          "url": "PreferredContactTimes",
+          "valueString": "Not after 7pm"
+        }
+      ]
+    },
+    {
+      "url": "https://fhir.nhs.uk/StructureDefinition/Extension-PDS-RemovalFromRegistration",
+      "extension": [
+        {
+          "url": "removalFromRegistrationCode",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode",
+                "code": "SCT",
+                "display": "Transferred to Scotland"
+              }
+            ]
+          }
+        },
+        {
+          "url": "effectiveTime",
+          "valuePeriod": {
+            "start": "2020-01-01T00:00:00+00:00",
+            "end": "2021-12-31T00:00:00+00:00"
+          }
+        }
+      ]
+    }
+  ]
+}

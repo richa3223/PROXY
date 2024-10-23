@@ -1,0 +1,4 @@
+{
+    "email_subject": "Validate Relationship Service",
+    "email_body": "<!doctype html><html><head> <title>Validated Relationship Service</title> <meta name=\"description\" content=\"VRS Email Template\"></head><body> The reference code {{reference_code}} and odscode is {{ods_code}}</body></html>"
+}

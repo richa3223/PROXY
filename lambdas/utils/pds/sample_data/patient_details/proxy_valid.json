@@ -1,0 +1,90 @@
+{
+  "address": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "type",
+              "valueCoding": {
+                "code": "PAF",
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType"
+              }
+            },
+            {
+              "url": "value",
+              "valueString": "30525558"
+            }
+          ],
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey"
+        }
+      ],
+      "id": "4BC8A73A",
+      "line": ["2 Jasmine Court", "Goxhill", "BARROW-UPON-HUMBER"],
+      "period": {
+        "start": "2023-06-19"
+      },
+      "postalCode": "DN19 7UD",
+      "use": "home"
+    }
+  ],
+  "birthDate": "1973-08-19",
+  "gender": "female",
+  "generalPractitioner": [
+    {
+      "id": "EFA5CD0D",
+      "identifier": {
+        "period": {
+          "start": "2023-06-19"
+        },
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "V81997"
+      },
+      "type": "Organization"
+    }
+  ],
+  "id": "5993552700",
+  "identifier": [
+    {
+      "extension": [
+        {
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "01",
+                "display": "Number present and verified",
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus",
+                "version": "1.0.0"
+              }
+            ]
+          }
+        }
+      ],
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "5993552700"
+    }
+  ],
+  "meta": {
+    "security": [
+      {
+        "code": "U",
+        "display": "unrestricted",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+      }
+    ],
+    "versionId": "4"
+  },
+  "name": [
+    {
+      "family": "MUTHUPALANIAPPAN",
+      "given": ["Tania"],
+      "id": "EA04B312",
+      "period": {
+        "start": "2023-06-19"
+      },
+      "use": "usual"
+    }
+  ],
+  "resourceType": "Patient"
+}

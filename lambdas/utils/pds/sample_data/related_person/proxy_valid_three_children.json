@@ -1,0 +1,122 @@
+[
+  {
+    "active": true,
+    "id": "9C2CCA7A",
+    "name": [
+      {
+        "period": {
+          "start": "2023-06-19"
+        },
+        "use": "usual"
+      }
+    ],
+    "patient": {
+      "identifier": {
+        "system": "https://beta.api.digital.nhs.uk",
+        "value": "5993544619"
+      },
+      "reference": "https://beta.api.digital.nhs.uk/Patient/5993544619",
+      "type": "Patient"
+    },
+    "period": {
+      "start": "2023-06-19"
+    },
+    "relationship": [
+      {
+        "coding": [
+          {
+            "code": "CHILD",
+            "display": "child",
+            "system": "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype"
+          },
+          {
+            "code": "Personal",
+            "display": "Personal relationship with the patient",
+            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole"
+          }
+        ]
+      }
+    ],
+    "resourceType": "RelatedPerson"
+  },
+  {
+    "active": true,
+    "id": "6EACABE8",
+    "name": [
+      {
+        "period": {
+          "start": "2023-06-19"
+        },
+        "use": "usual"
+      }
+    ],
+    "patient": {
+      "identifier": {
+        "system": "https://beta.api.digital.nhs.uk",
+        "value": "5993554665"
+      },
+      "reference": "https://beta.api.digital.nhs.uk/Patient/5993554665",
+      "type": "Patient"
+    },
+    "period": {
+      "start": "2023-06-19"
+    },
+    "relationship": [
+      {
+        "coding": [
+          {
+            "code": "CHILD",
+            "display": "child",
+            "system": "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype"
+          },
+          {
+            "code": "Personal",
+            "display": "Personal relationship with the patient",
+            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole"
+          }
+        ]
+      }
+    ],
+    "resourceType": "RelatedPerson"
+  },
+  {
+    "active": true,
+    "id": "0760E9A5",
+    "name": [
+      {
+        "period": {
+          "start": "2023-06-19"
+        },
+        "use": "usual"
+      }
+    ],
+    "patient": {
+      "identifier": {
+        "system": "https://beta.api.digital.nhs.uk",
+        "value": "5993552042"
+      },
+      "reference": "https://beta.api.digital.nhs.uk/Patient/5993552042",
+      "type": "Patient"
+    },
+    "period": {
+      "start": "2023-06-19"
+    },
+    "relationship": [
+      {
+        "coding": [
+          {
+            "code": "CHILD",
+            "display": "child",
+            "system": "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype"
+          },
+          {
+            "code": "Personal",
+            "display": "Personal relationship with the patient",
+            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole"
+          }
+        ]
+      }
+    ],
+    "resourceType": "RelatedPerson"
+  }
+]

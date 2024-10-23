@@ -1,0 +1,56 @@
+{
+    "attachments": [
+        {
+            "color": "#fc0303",
+            "blocks": [
+                {
+                    "type": "header",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Certificate expiry warning"
+                    }
+                },
+                {
+                    "type": "section",
+                    "text": {
+                        "type": "mrkdwn",
+                        "text": "<MESSAGE>"
+                    }
+                },
+                {
+                    "type": "divider"
+                },
+                {
+                    "type": "section",
+                    "text": {
+                        "type": "mrkdwn",
+                        "text": "Environment: *<ENVIRONMENT>* | Workspace: *<WORKSPACE>* "
+                    }
+                },
+                {
+                    "type": "rich_text",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "Please add "
+                                },
+                                {
+                                    "type": "emoji",
+                                    "name": "eyes",
+                                    "unicode": "1f440"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": " If you've seen this message"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

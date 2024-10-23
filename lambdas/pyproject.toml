@@ -1,0 +1,178 @@
+[tool.poetry]
+name = "lambdas"
+version = "0.1.0"
+description = ""
+authors = ["Jens Kursch <106172039+jens-kursch-NHSD@users.noreply.github.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.9"
+spine-aws-common = "^0.2.14"
+moto = "^5.0.10"
+
+[tool.poetry.group.verify_parameters.dependencies]
+python = "^3.9"
+spine-aws-common = "^0.2.14"
+
+[tool.poetry.group.pds_access_token.dependencies]
+python = "^3.9"
+boto3 = "^1.34.125"
+spine-aws-common = "^0.2.14"
+pyjwt = "^2.8.0"
+cryptography = "^42.0.4"
+requests = "^2.31.0"
+
+[tool.poetry.group.pds_get_patient_details.dependencies]
+python = "^3.9"
+spine-aws-common = "^0.2.14"
+fhirclient = "^4.1.0"
+urllib3 = "<2"
+
+[tool.poetry.group.relationship_lookup.dependencies]
+python = "^3.9"
+spine-aws-common = "^0.2.14"
+fhirclient = "^4.1.0"
+urllib3 = "<2"
+
+[tool.poetry.group.process_validation_result.dependencies]
+python = "^3.9"
+fhirclient = "^4.1.0"
+spine-aws-common = "^0.2.14"
+
+[tool.poetry.group.validate_eligibility.dependencies]
+python = "^3.9"
+fhirclient = "^4.1.0"
+spine-aws-common = "^0.2.14"
+
+[tool.poetry.group.redact_sensitive_data.dependencies]
+python = "^3.9"
+spine-aws-common = "^0.2.14"
+
+[tool.poetry.group.validate_relationship.dependencies]
+python = "^3.9"
+fhirclient = "^4.1.0"
+spine-aws-common = "^0.2.14"
+
+[tool.poetry.group.start_sensitive_audit_data_crawler.dependencies]
+python = "^3.9"
+boto3 = "^1.34.125"
+spine-aws-common = "^0.2.14"
+
+[tool.poetry.group.start_standard_audit_data_crawler.dependencies]
+python = "^3.9"
+boto3 = "^1.34.125"
+spine-aws-common = "^0.2.14"
+
+[tool.poetry.group.splunk_log_and_metric_formatter.dependencies]
+python = "^3.9"
+opentelemetry-proto = "^1.1.0"
+protobuf = "^3.15.8"
+
+[tool.poetry.group.create_access_request.dependencies]
+python = "^3.9"
+spine-aws-common = "^0.2.14"
+fhirclient = "^4.1.0"
+boto3 = "^1.34.125"
+
+[tool.poetry.group.send_gp_email.dependencies]
+python = "^3.9"
+boto3 = "^1.34.125"
+spine-aws-common = "^0.2.14"
+requests = "^2.31.0"
+
+[tool.poetry.group.ods_lookup.dependencies]
+python = "^3.9"
+spine-aws-common = "^0.2.14"
+requests = "^2.31.0"
+
+[tool.poetry.group.get_email_template.dependencies]
+python = "^3.9"
+spine-aws-common = "^0.2.14"
+boto3 = "^1.34.125"
+
+[tool.poetry.group.create_merged_email.dependencies]
+python = "^3.9"
+spine-aws-common = "^0.2.14"
+boto3 = "^1.34.125"
+jinja2 = "3.1.4"
+
+[tool.poetry.group.redact_eventbridge_events_and_log_to_cloudwatch.dependencies]
+python = "^3.9"
+spine-aws-common = "^0.2.14"
+boto3 = "^1.34.125"
+
+[tool.poetry.group.verify_api_parameters.dependencies]
+python = "^3.9"
+spine-aws-common = "^0.2.14"
+boto3 = "^1.34.125"
+
+[tool.poetry.group.get_candidate_relationships.dependencies]
+python = "^3.9"
+spine-aws-common = "^0.2.14"
+boto3 = "^1.34.125"
+fhirclient = "^4.1.0"
+
+[tool.poetry.group.mock_pds_access_token.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.mock_pds_get_patient_details.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.mock_pds_get_related_person.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.raise_certificate_alert.dependencies]
+python = "^3.9"
+spine-aws-common = "^0.2.14"
+boto3 = "^1.34.125"
+cryptography = "^42.0.8"
+requests = "^2.31.0"
+
+[tool.poetry.group.slack_alerts.dependencies]
+python = "^3.9"
+boto3 = "^1.34.125"
+requests = "^2.31.0"
+aws-lambda-powertools = "^2.39.1"
+
+[tool.poetry.group.cache_pds_response.dependencies]
+python = "^3.9"
+boto3 = "^1.34.125"
+requests = "^2.31.0"
+aws-lambda-powertools = "^2.39.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+pylint = "^3.2.5"
+vulture = "^2.7"
+jmespath = "^1.0.1"
+black = "^24.4.2"
+tox = "^4.5.1"
+pytest-cov = "^4.1.0"
+isort = "^5.12.0"
+pytest-mock = "^3.12.0"
+httpretty = "^1.1.4"
+requests-mock = "^1.11.0"
+pytest-icdiff = "^0.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+src_paths = ["lambdas"]
+known_first_party = "lambdas"
+multi_line_output = 3
+
+[tool.pytest.ini_options]
+python_files = "*_test.py"
+
+[tool.pylint.main]
+ignore-patterns = ["^.*test.*$"]
+
+[tool.pylint.'MESSAGES CONTROL']
+disable = 'logging-fstring-interpolation'

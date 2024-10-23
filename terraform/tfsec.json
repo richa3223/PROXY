@@ -1,0 +1,12 @@
+{
+    "minimum_severity": "MEDIUM",
+    "severity_overrides": {
+      "aws-cloudwatch-log-group-customer-key": "LOW",
+      "aws-lambda-enable-tracing": "LOW",
+      "aws-iam-no-policy-wildcards": "LOW",
+      "aws-s3-enable-versioning": "LOW",
+      "aws-s3-enable-bucket-logging": "LOW",
+      "aws-ec2-no-public-egress-sgr": "LOW"
+    },
+    "exclude": ["aws-ec2-require-vpc-flow-logs-for-all-vpcs"]
+}

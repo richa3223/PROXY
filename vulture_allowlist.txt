@@ -1,0 +1,96 @@
+setup_lambda_test_instance  # Ignore Lambda unit test setup function
+
+# Lambda functions - example path "lambdas/sum_calculator/test/lambda_handler.py"
+_.initialise  # unused method
+_.lambda_handler  # Ignore Lambda function that is called from external
+
+# conftest - example path "lambdas/conftest.py"
+_.log_helper_fixture  # unused method (:11:)
+_.logger_fixture  # unused method (lambdas/conftest.py:20:)
+_.initialise_logging  # unused method (lambdas/conftest.py:31:)
+
+# fhirclient_test - "lambdas/utils/test/fhirclient_test.py"
+_.setup_pdsfhirclient_instance # unused function (:12:)
+_.setup_fake_response # unused function (:22:)
+_.status_code # unused attribute (:27:)
+
+# False positive on side effect as it used to raise an exception
+_.side_effect  # unused attribute
+
+# process_validation_result
+_.setup_fake_op_outcome # unused function
+_.setup_fake_bundle # unused function
+_.severity # unused attribute
+
+# utils/validation/codes
+_.http_status # unused variable
+_.response_code # unused variable
+_.audit_details_type # unused variable
+_.validation_code # unused variable
+_.audit_msg # unused variable
+
+#exclude example code
+_.DetailType  # unused attribute (lambdas/code_examples/event_publisher_example.py:22)
+_.EventBusName  # unused attribute (lambdas/code_examples/event_publisher_example.py:23)
+_.Source  # unused attribute (lambdas/code_examples/event_publisher_example.py:24)
+_.request_id  # unused attribute (lambdas/code_examples/event_publisher_example.py:27)
+_.created  # unused attribute (lambdas/code_examples/event_publisher_example.py:28)
+_.correlation_id  # unused attribute (lambdas/code_examples/event_publisher_example.py:29)
+_.client_key  # unused attribute (lambdas/code_examples/event_publisher_example.py:30)
+_.patient_identifier  # unused attribute (lambdas/code_examples/event_publisher_example.py:33)
+_.proxy_identifier  # unused attribute (lambdas/code_examples/event_publisher_example.py:34)
+_.proxy_identifier_type  # unused attribute (lambdas/code_examples/event_publisher_example.py:37)
+_.relationship_type  # unused attribute (lambdas/code_examples/event_publisher_example.py:38)
+_.validation_result_info  # unused attribute (lambdas/code_examples/event_publisher_example.py:39)
+_.validation_result_event  # unused method (lambdas/code_examples/event_publisher_example.py:50)
+lambda_handler  # unused function (lambdas/code_examples/event_publisher_example.py:79)
+context  # unused variable (lambdas/code_examples/event_publisher_example.py:79)
+event  # unused variable (lambdas/code_examples/event_publisher_example.py:79)
+
+# pds_test
+_.related_person_one_record # unused method - loads record
+
+# validate_result
+_.load_patient_record # unused method - loads record
+_.load_related_person_record # unused method - loads record
+_.load_other_related_person_record # unused method
+
+# verify_parameters
+_.create_sut # unused method - create instance
+
+# exclude false positives from operational result
+_.system
+_.version
+_.display
+_.issue_code
+_.diagnostics
+_.expression
+_.OPERATIONAL_OUTCOME_ISSUE_CODE_REQUIRED
+_.PARAM_INCLUDE__RELATEDPERSON_PATIENT
+
+# exclude false positives from ods_lookup
+_.setup_fake_secret
+_.setup_fake_get
+
+# exclude false positives from redact_eventbridge_events_and_log_to_cloudwatch
+_.setup
+
+# exclude false positives from dynamodb
+_.ProxyNHSNumber
+_.PatientNHSNumber
+_.QuestionnaireData
+_.ApplicationStatus
+
+# exclude false positives from lambdas conftest
+_.function_name
+_.memory_limit_in_mb
+_.invoked_function_arn
+_.aws_request_id
+_._content
+
+# exclude false positives from reference code
+_.date_mock
+_.get_item_mock
+_.resource_mock
+_.check_dynamodb_mock
+_.table_name_mock

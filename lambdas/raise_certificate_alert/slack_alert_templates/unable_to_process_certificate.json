@@ -1,0 +1,23 @@
+{
+    "attachments": [
+        {
+            "color": "#fca903",
+            "blocks": [
+                {
+                    "type": "header",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Unable to check certificate expiry"
+                    }
+                },
+                {
+                    "type": "section",
+                    "text": {
+                        "type": "mrkdwn",
+                        "text": ":Warning: Unable to process *<CERTIFICATE_NAME>*,\nAs such unable to check when certificate will expire\n"
+                    }
+                }
+            ]
+        }
+    ]
+}

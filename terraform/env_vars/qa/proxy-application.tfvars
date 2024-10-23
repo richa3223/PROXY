@@ -1,0 +1,17 @@
+environment                                    = "qa"
+main_workspace                                 = "main"
+use_shared_common_stack                        = true
+process_validation_result_lambda_memory_size   = 512
+pds_get_patient_details_lambda_memory_size     = 512
+validate_eligibility_lambda_memory_size        = 1024
+verify_parameters_lambda_memory_size           = 256
+validate_relationship_lambda_memory_size       = 1024
+relationship_lookup_lambda_memory_size         = 1024
+pds_access_token_lambda_memory_size            = 1536
+create_access_request_lambda_memory_size       = 128
+get_candidate_relationships_lambda_memory_size = 256
+raise_certificate_alert_lambda_memory_size     = 1024
+slack_alerts_alert_lambda_memory_size          = 1024
+dynamodb_ttl                                   = 604800
+pds_auth_url                                   = "https://int.api.service.nhs.uk/oauth2/token"
+pds_base_url                                   = "https://mock.validated-relationships-service-dev.national.nhs.uk/FHIR/R4"

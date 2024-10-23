@@ -1,0 +1,29 @@
+{
+  "version": "0",
+  "id": "a979014c-6fce-8af5-d919-135eb4e0b75e",
+  "detail-type": "Validation Failed",
+  "source": "Validation Service",
+  "account": "123456789",
+  "time": "2024-01-25T11:42:25Z",
+  "region": "eu-west-2",
+  "resources": [],
+  "detail": {
+    "metadata": {
+      "client-key": "0ce6574f-a702-4359-9c1f-ff87a83aefa0",
+      "correlation-id": "639d1d64-b6da-45a3-b0f6-0263f14baa35",
+      "created": "2024-01-25T11:42:23.544872",
+      "request-id": "d2ef3f40-e387-491b-b2a4-3d5473f73268"
+    },
+    "sensitive": {
+      "patient-identifier": "9435797881",
+      "proxy-identifier": "9435775039"
+    },
+    "standard": {
+      "proxy-identifier-type": "NHS Number",
+      "relationship-type": "GESTM",
+      "validation-result-info": {
+        "NO_PATIENT_CONSENT": "Validation failed: related person record is sensitive or restricted (-S)"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "scripts"
+version = "1.0.0"
+description = ""
+readme = "README.md"
+authors = ["Chris Young <chris.young12@nhs.net>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyotp = "^2.9.0"
+pytest-nhsd-apim = "^3.3.13"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,12 @@
+{
+    "blocks": [
+        {
+            "type": "section",
+            "text": {
+                "type": "plain_text",
+                "text": "This is a test message, please ignore",
+                "emoji": true
+            }
+        }
+    ]
+}

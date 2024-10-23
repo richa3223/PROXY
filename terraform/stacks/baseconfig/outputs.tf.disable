@@ -1,0 +1,12 @@
+################################################################################
+# GitHub OIDC Provider
+################################################################################
+
+output "arn" {
+  description = "The ARN assigned by AWS for this provider"
+  value       = aws_iam_openid_connect_provider.aws_oidc_provider.arn
+}
+output "url" {
+  description = "The URL of the identity provider. Corresponds to the iss claim"
+  value       = aws_iam_openid_connect_provider.aws_oidc_provider.url
+}

@@ -1,0 +1,542 @@
+{
+    "Item": {
+        "ProxyPDSPatientRecord": {
+            "S": "{\"id\":\"9730675929\",\"meta\":{\"security\":[{\"code\":\"U\",\"display\":\"unrestricted\",\"system\":\"http://terminology.hl7.org/CodeSystem/v3-Confidentiality\"}],\"versionId\":\"2\"},\"address\":[{\"extension\":[{\"extension\":[{\"url\":\"type\",\"valueCoding\":{\"code\":\"PAF\",\"system\":\"https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType\"}},{\"url\":\"value\",\"valueString\":\"06296232\"}],\"url\":\"https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey\"}],\"id\":\"SyDtV\",\"line\":[\"1 SAXON CLOSE\",\"BARTON-UPON-HUMBER\",\"S HUMBERSIDE\"],\"period\":{\"start\":\"2009-02-27\"},\"postalCode\":\"DN18 5HJ\",\"use\":\"home\"}],\"birthDate\":\"2005-01-20\",\"gender\":\"female\",\"generalPractitioner\":[{\"id\":\"umsYa\",\"identifier\":{\"period\":{\"start\":\"2015-04-14\"},\"system\":\"https://fhir.nhs.uk/Id/ods-organization-code\",\"value\":\"A20047\"},\"type\":\"Organization\"}],\"identifier\":[{\"extension\":[{\"url\":\"https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus\",\"valueCodeableConcept\":{\"coding\":[{\"code\":\"01\",\"display\":\"Number present and verified\",\"system\":\"https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus\",\"version\":\"1.0.0\"}]}}],\"system\":\"https://fhir.nhs.uk/Id/nhs-number\",\"value\":\"9730675929\"}],\"name\":[{\"id\":\"vJRxt\",\"family\":\"MORLEY\",\"given\":[\"Betty\",\"Andrea\"],\"period\":{\"start\":\"2016-09-09\"},\"prefix\":[\"MS\"],\"use\":\"usual\"}],\"resourceType\":\"Patient\"}"
+        },
+        "PatientNHSNumber": {
+            "S": "9730676399"
+        },
+        "ApplicationStatus": {
+            "S": "ACCESS_REQUEST_READY_FOR_AUTHORISATION"
+        },
+        "ReferenceCode": {
+            "S": "18704o5en9"
+        },
+        "TTL": {
+            "N": "1720709395"
+        },
+        "QuestionnaireData": {
+            "M": {
+                "authored": {
+                    "S": "2024-03-24T16:32:12.363Z"
+                },
+                "questionnaire": {
+                    "S": "Questionnaire/example-questionnaire"
+                },
+                "item": {
+                    "L": [
+                        {
+                            "M": {
+                                "item": {
+                                    "L": [
+                                        {
+                                            "M": {
+                                                "linkId": {
+                                                    "S": "nhs_number"
+                                                },
+                                                "answer": {
+                                                    "L": [
+                                                        {
+                                                            "M": {
+                                                                "valueString": {
+                                                                    "S": "9730675929"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "text": {
+                                                    "S": "NHS Number"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "M": {
+                                                "linkId": {
+                                                    "S": "relationship"
+                                                },
+                                                "answer": {
+                                                    "L": [
+                                                        {
+                                                            "M": {
+                                                                "valueCoding": {
+                                                                    "M": {
+                                                                        "system": {
+                                                                            "S": "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+                                                                        },
+                                                                        "code": {
+                                                                            "S": "Personal"
+                                                                        },
+                                                                        "display": {
+                                                                            "S": "???"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "text": {
+                                                    "S": "Relationship"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "linkId": {
+                                    "S": "proxy_details"
+                                },
+                                "text": {
+                                    "S": "Proxy details"
+                                }
+                            }
+                        },
+                        {
+                            "M": {
+                                "item": {
+                                    "L": [
+                                        {
+                                            "M": {
+                                                "linkId": {
+                                                    "S": "nhs_number"
+                                                },
+                                                "answer": {
+                                                    "L": [
+                                                        {
+                                                            "M": {
+                                                                "valueString": {
+                                                                    "S": "9730676399"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "text": {
+                                                    "S": "NHS Number"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "M": {
+                                                "linkId": {
+                                                    "S": "first_name"
+                                                },
+                                                "answer": {
+                                                    "L": [
+                                                        {
+                                                            "M": {
+                                                                "valueString": {
+                                                                    "S": "Joanna"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "text": {
+                                                    "S": "First Name"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "M": {
+                                                "linkId": {
+                                                    "S": "last_name"
+                                                },
+                                                "answer": {
+                                                    "L": [
+                                                        {
+                                                            "M": {
+                                                                "valueString": {
+                                                                    "S": "FILSON"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "text": {
+                                                    "S": "Last name"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "M": {
+                                                "linkId": {
+                                                    "S": "date_of_birth"
+                                                },
+                                                "answer": {
+                                                    "L": [
+                                                        {
+                                                            "M": {
+                                                                "valueDate": {
+                                                                    "S": "2011-02-28"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "text": {
+                                                    "S": "Date of Birth"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "M": {
+                                                "linkId": {
+                                                    "S": "postcode"
+                                                },
+                                                "answer": {
+                                                    "L": [
+                                                        {
+                                                            "M": {
+                                                                "valueString": {
+                                                                    "S": "DN19 7SU"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "text": {
+                                                    "S": "Postcode"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "linkId": {
+                                    "S": "patient_details"
+                                },
+                                "text": {
+                                    "S": "Patient details"
+                                }
+                            }
+                        },
+                        {
+                            "M": {
+                                "linkId": {
+                                    "S": "requested_services"
+                                },
+                                "answer": {
+                                    "L": [
+                                        {
+                                            "M": {
+                                                "valueCoding": {
+                                                    "M": {
+                                                        "system": {
+                                                            "S": "http://terminology.hl7.org/CodeSystem/consentaction"
+                                                        },
+                                                        "code": {
+                                                            "S": "appointments"
+                                                        },
+                                                        "display": {
+                                                            "S": "???"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "M": {
+                                                "valueCoding": {
+                                                    "M": {
+                                                        "system": {
+                                                            "S": "http://terminology.hl7.org/CodeSystem/consentaction"
+                                                        },
+                                                        "code": {
+                                                            "S": "medicines"
+                                                        },
+                                                        "display": {
+                                                            "S": "???"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "M": {
+                                                "valueCoding": {
+                                                    "M": {
+                                                        "system": {
+                                                            "S": "http://terminology.hl7.org/CodeSystem/consentaction"
+                                                        },
+                                                        "code": {
+                                                            "S": "records"
+                                                        },
+                                                        "display": {
+                                                            "S": "???"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "M": {
+                                                "valueCoding": {
+                                                    "M": {
+                                                        "system": {
+                                                            "S": "http://terminology.hl7.org/CodeSystem/consentaction"
+                                                        },
+                                                        "code": {
+                                                            "S": "demographics"
+                                                        },
+                                                        "display": {
+                                                            "S": "???"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "text": {
+                                    "S": "Requested services"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "source": {
+                    "M": {
+                        "identifier": {
+                            "M": {
+                                "system": {
+                                    "S": "https://fhir.nhs.uk/Id/nhs-number"
+                                },
+                                "value": {
+                                    "S": "9730675929"
+                                }
+                            }
+                        },
+                        "type": {
+                            "S": "RelatedPerson"
+                        }
+                    }
+                },
+                "resourceType": {
+                    "S": "QuestionnaireResponse"
+                },
+                "status": {
+                    "S": "completed"
+                }
+            }
+        },
+        "ProxyNHSNumber": {
+            "S": "9730675929"
+        },
+        "PatientPDSPatientRecord": {
+            "S": "{\"id\":\"9730675929\",\"meta\":{\"security\":[{\"code\":\"U\",\"display\":\"unrestricted\",\"system\":\"http://terminology.hl7.org/CodeSystem/v3-Confidentiality\"}],\"versionId\":\"2\"},\"address\":[{\"extension\":[{\"extension\":[{\"url\":\"type\",\"valueCoding\":{\"code\":\"PAF\",\"system\":\"https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType\"}},{\"url\":\"value\",\"valueString\":\"06296232\"}],\"url\":\"https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey\"}],\"id\":\"SyDtV\",\"line\":[\"1 SAXON CLOSE\",\"BARTON-UPON-HUMBER\",\"S HUMBERSIDE\"],\"period\":{\"start\":\"2009-02-27\"},\"postalCode\":\"DN18 5HJ\",\"use\":\"home\"}],\"birthDate\":\"2005-01-20\",\"gender\":\"female\",\"generalPractitioner\":[{\"id\":\"umsYa\",\"identifier\":{\"period\":{\"start\":\"2015-04-14\"},\"system\":\"https://fhir.nhs.uk/Id/ods-organization-code\",\"value\":\"A20047\"},\"type\":\"Organization\"}],\"identifier\":[{\"extension\":[{\"url\":\"https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus\",\"valueCodeableConcept\":{\"coding\":[{\"code\":\"01\",\"display\":\"Number present and verified\",\"system\":\"https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus\",\"version\":\"1.0.0\"}]}}],\"system\":\"https://fhir.nhs.uk/Id/nhs-number\",\"value\":\"9730675929\"}],\"name\":[{\"id\":\"vJRxt\",\"family\":\"MORLEY\",\"given\":[\"Betty\",\"Andrea\"],\"period\":{\"start\":\"2016-09-09\"},\"prefix\":[\"MS\"],\"use\":\"usual\"}],\"resourceType\":\"Patient\"}"
+        }
+    },
+    "ProxyPDSPatientRecord": {
+        "id": "9730675929",
+        "meta": {
+            "security": [
+                {
+                    "code": "U",
+                    "display": "unrestricted",
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+                }
+            ],
+            "versionId": "2"
+        },
+        "address": [
+            {
+                "extension": [
+                    {
+                        "extension": [
+                            {
+                                "url": "type",
+                                "valueCoding": {
+                                    "code": "PAF",
+                                    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType"
+                                }
+                            },
+                            {
+                                "url": "value",
+                                "valueString": "06296232"
+                            }
+                        ],
+                        "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey"
+                    }
+                ],
+                "id": "SyDtV",
+                "line": [
+                    "1 SAXON CLOSE",
+                    "BARTON-UPON-HUMBER",
+                    "S HUMBERSIDE"
+                ],
+                "period": {
+                    "start": "2009-02-27"
+                },
+                "postalCode": "DN18 5HJ",
+                "use": "home"
+            }
+        ],
+        "birthDate": "2005-01-20",
+        "gender": "female",
+        "generalPractitioner": [
+            {
+                "id": "umsYa",
+                "identifier": {
+                    "period": {
+                        "start": "2015-04-14"
+                    },
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "A20047"
+                },
+                "type": "Organization"
+            }
+        ],
+        "identifier": [
+            {
+                "extension": [
+                    {
+                        "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "01",
+                                    "display": "Number present and verified",
+                                    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus",
+                                    "version": "1.0.0"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "system": "https://fhir.nhs.uk/Id/nhs-number",
+                "value": "9730675929"
+            }
+        ],
+        "name": [
+            {
+                "id": "vJRxt",
+                "family": "MORLEY",
+                "given": [
+                    "Betty",
+                    "Andrea"
+                ],
+                "period": {
+                    "start": "2016-09-09"
+                },
+                "prefix": [
+                    "MS"
+                ],
+                "use": "usual"
+            }
+        ],
+        "resourceType": "Patient"
+    },
+    "PatientPDSPatientRecord": {
+        "id": "9730675929",
+        "meta": {
+            "security": [
+                {
+                    "code": "U",
+                    "display": "unrestricted",
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+                }
+            ],
+            "versionId": "2"
+        },
+        "address": [
+            {
+                "extension": [
+                    {
+                        "extension": [
+                            {
+                                "url": "type",
+                                "valueCoding": {
+                                    "code": "PAF",
+                                    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType"
+                                }
+                            },
+                            {
+                                "url": "value",
+                                "valueString": "06296232"
+                            }
+                        ],
+                        "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey"
+                    }
+                ],
+                "id": "SyDtV",
+                "line": [
+                    "1 SAXON CLOSE",
+                    "BARTON-UPON-HUMBER",
+                    "S HUMBERSIDE"
+                ],
+                "period": {
+                    "start": "2009-02-27"
+                },
+                "postalCode": "DN18 5HJ",
+                "use": "home"
+            }
+        ],
+        "birthDate": "2005-01-20",
+        "gender": "female",
+        "generalPractitioner": [
+            {
+                "id": "umsYa",
+                "identifier": {
+                    "period": {
+                        "start": "2015-04-14"
+                    },
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "A20047"
+                },
+                "type": "Organization"
+            }
+        ],
+        "identifier": [
+            {
+                "extension": [
+                    {
+                        "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "01",
+                                    "display": "Number present and verified",
+                                    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus",
+                                    "version": "1.0.0"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "system": "https://fhir.nhs.uk/Id/nhs-number",
+                "value": "9730675929"
+            }
+        ],
+        "name": [
+            {
+                "id": "vJRxt",
+                "family": "MORLEY",
+                "given": [
+                    "Betty",
+                    "Andrea"
+                ],
+                "period": {
+                    "start": "2016-09-09"
+                },
+                "prefix": [
+                    "MS"
+                ],
+                "use": "usual"
+            }
+        ],
+        "resourceType": "Patient"
+    },
+    "email_details": {
+        "email_content": {
+            "email_subject": "Validate Relationship Service",
+            "email_body": "<!doctype html><html><head> <title>Validated Relationship Service</title> <meta name=\"description\" content=\"VRS Email Template\"></head><body> The reference code {{reference_code}} and odscode is {{ods_code}}</body></html>"
+        },
+        "gp_email": {
+            "L": [
+                {
+                    "S": "dev.proxyaccess.gp1@mailinator.com"
+                }
+            ]
+        }
+    }
+}

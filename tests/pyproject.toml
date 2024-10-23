@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "tests"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+authors = ["Chris Young <chris.young12@nhs.net>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest-nhsd-apim = "3.3.12"
+pytest-bdd = "^7.1.2"
+boto3 = "^1.34.42"
+pytest-html-reporter = "^0.2.9"
+isort = "^5.13.2"
+black = "^24.2.0"
+pylint = "^3.0.3"
+yaql = "^3.0.0"
+openapi-core = "^0.19.0"
+delayed-assert = "^0.3.6"
+pytest-xdist = "^3.5.0"
+setuptools = "^69.5.1"
+pytest-flakefinder = "^1.1.0"
+pytest-random-order = "^1.1.1"
+locust = "^2.27.0"
+pytest-rerunfailures = "^12.0"
+cryptography = "^42.0.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint.'MESSAGES CONTROL']
+disable = 'logging-fstring-interpolation'

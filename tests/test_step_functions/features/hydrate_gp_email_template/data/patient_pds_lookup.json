@@ -1,0 +1,100 @@
+{
+    "id": "9730676399",
+    "meta": {
+        "security": [
+            {
+                "code": "U",
+                "display": "unrestricted",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+            }
+        ],
+        "versionId": "2"
+    },
+    "address": [
+        {
+            "extension": [
+                {
+                    "extension": [
+                        {
+                            "url": "type",
+                            "valueCoding": {
+                                "code": "PAF",
+                                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType"
+                            }
+                        },
+                        {
+                            "url": "value",
+                            "valueString": "06291602"
+                        }
+                    ],
+                    "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey"
+                }
+            ],
+            "id": "xfCww",
+            "line": [
+                "178 WILLOUGHBY ROAD",
+                "SCUNTHORPE",
+                "S HUMBERSIDE"
+            ],
+            "period": {
+                "start": "2018-06-29"
+            },
+            "postalCode": "DN17 2QS",
+            "use": "home"
+        }
+    ],
+    "birthDate": "2014-09-21",
+    "gender": "male",
+    "generalPractitioner": [
+        {
+            "id": "bHnVO",
+            "identifier": {
+                "period": {
+                    "start": "2017-12-11"
+                },
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "A20047"
+            },
+            "type": "Organization"
+        }
+    ],
+    "identifier": [
+        {
+            "extension": [
+                {
+                    "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "01",
+                                "display": "Number present and verified",
+                                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus",
+                                "version": "1.0.0"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9730676399"
+        }
+    ],
+    "name": [
+        {
+            "id": "ggvay",
+            "family": "WOMACK",
+            "given": [
+                "David",
+                "Gus"
+            ],
+            "period": {
+                "start": "2018-06-24"
+            },
+            "prefix": [
+                "MR"
+            ],
+            "use": "usual"
+        }
+    ],
+    "resourceType": "Patient"
+}
